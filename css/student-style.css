@@ -1,135 +1,99 @@
-.studentContainer .top{
+/*--Main Heading--*/
+body{
+    background: linear-gradient(
+        180deg,
+        #3F7EC0/*#9800FF*/,
+        #fff
+    );
+}
+.main {
+    position: relative; 
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
 }
-.sHeading{
-    text-align: center;
-    font-family: rock salt;
-    font-size: 40px;
-    padding: 100px 0 40px 0;
-}
-.sContent{
-    text-align: center;
+
+.main::before {    
+    content: "";
+    background-attachment: fixed;
+    background-image: url('/img/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
     width: 80%;
-    padding: 20px 0 80px 20%;
+    height: 40%;
+    opacity: 0.5;
+    filter: blur(5px);
 }
-.rContainer{
+
+.main .heading {
+    position: relative;  
+    font-size: 50px;
+    font-family: 'rock salt';
+    font-weight: 1000;
+    /* padding: 100px 0 100px 0; */
+    z-index: 10;
+    margin: 0;
     text-align: center;
-    width: 100%;
-    padding: 0 0 50px 0;
 }
-.rHeading{
+
+/*--Why Join Us--*/
+.wju{
+    padding: 100px 100px 50px;
+    text-align: center;
+}
+.wju .heading{
     font-family: itim;
     font-size: 30px;
+    padding: 0 0 20px 0;
 }
-.rHeading span{
-    font-family: rock salt;
-    font-size: 17px;
-    font-weight: 1000;
-}
-.rContent{
-    width: 80%;
-    transform: translate(10%,0);
-    padding: 20px 0 0 0;
-}
-.middleRow{
+
+/*--Student Information--*/
+.si{
+    padding: 50px 100px;
     display: inline-block;
     width: 100%;
-    padding: 50px 100px 100px 100px;
 }
-.bContainer{
+
+.benifits .heading, .eligible .heading{
+    font-family: itim;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
+.benifits , .eligible{
+    width: 45%;
+}
+.benifits{
     float: left;
-    width: 50%;
-    padding: 0 20px 0 0;
 }
-.bHeading{
-    text-align: center;
-    font-family: itim;
-    font-size: 30px;
-    padding: 0 0 30px 0;
-}
-.eContainer{
+.eligible{
     float: right;
-    width: 50%;
-    padding: 0 0 0 20px;
 }
-.eHeading{
+.eligible video{
     text-align: center;
-    font-family: itim;
-    font-size: 30px;
-    padding: 0 0 30px 0;
-}
-.eVid{
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-.eContent ol{
-    padding: 0 0 0 30px;
+    padding: 50px 5% ;
 }
 
-/*--How to Join Us--*/
-.htjContainer{
-    padding: 50px 0 100px 0;
+/*--How To Join Us--*/
+.htj{
+    width: 80%;
+    transform: translate(10%,0);
+    padding: 50px 0 200px 0;
 }
-.htjHeading{
+.htj .heading{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: caveatbrush;
     text-align: center;
-    font-family: caveatBrush;
-    font-size: 50px;
+    padding: 50px 0;
 }
-.htjContent{
-    padding: 50px 0 50px 100px;
+.htj .content{
+    transform: translate(10%,0);
 }
-.htjSubHeading{
-    font-family: itim;
-    font-size: 30px;
-}
-.htjSubContent{
-    font-size: 20px;
-    padding: 0 0 10px 20px;
-    width: 60%;
-}
-.htjContent a{
-    text-decoration: underline;
-    color: #2e3131;
-    transition: all 0.3s ease;
-}
-.htjContent a:hover{
-    color: #5b5e5e;
-    transition: all 0.3s ease;
-}
-
-/*--Mobile View--*/
-@media (max-width:1200px){
-    .middleRow{
-        display: block;
-    }
-    .bContainer, .eContainer{
-        float: none;
-        transform: translate(10%,0);
-        width: 90%;
-        padding: 50px 0 30px 0;
-    }
-}
-@media (max-width:770px){
-    .eVid video{
-        width: 75%;
-    }
-    .middleRow{
-        padding: 50px 20px 50px 20px;
-    }
-    .bContainer, .eContainer{
-        transform: translate(5%,0);
-    }
-    .sHeading{
-        font-size: 200%;
-    }
-}
-@media (max-width:550px){
-    .htjContent{
-        padding: 50px 0 50px 10%;
-    }
-    .eVid video{
-        width: 85%;
-    }
-    
+.htj .content .desc{
+    padding: 10px 0 20px 10px;
 }
