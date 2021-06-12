@@ -1,7 +1,7 @@
 body{
     background: linear-gradient(
         180deg,
-        #C8A2C8,
+        #B5A2C8,
         #fff
     );
 }
@@ -114,7 +114,15 @@ body{
 .join .jButton:hover{
     color: #282d32;
     transform: scale(1.05);
-    box-shadow: 0px 0px 70px #3F7EC0 /*rgba(0,0,0,0.5*/;
+    /* box-shadow: 0px 0px 70px #3F7EC0; */
+    transition: all 0.3s ease;
+}
+.join .VButton:hover{
+    box-shadow: 0px 0px 70px #9062be;
+    transition: all 0.3s ease;
+}
+.join .SButton:hover{
+    box-shadow: 0px 0px 70px #6C9EDF /*rgba(0,0,0,0.5*/;
     transition: all 0.3s ease;
 }
 
