@@ -58,6 +58,9 @@ body{
     width: 40%;
     padding: 100px 100px 100px 0;
 }
+.wju .content ol{
+    padding: 0 0 0 10px;
+}
 
 /*--Are You Eligible--*/
 .aye{
@@ -78,6 +81,35 @@ body{
     width: 40%;
     padding: 10px 50px 50px 0;
 }
+.aye .content ol{
+    padding: 10px 0 0px 30px;
+}
+
+.banner {
+    width: 100%;
+    padding: 0 10%;
+}
+.banner a{
+    display: block;
+}
+.banner .heading{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 1000;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.banner a:hover{
+    text-decoration: none;
+}
+.banner .heading:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 70px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
 
 /*--How To Join Us--*/
 .htj{
@@ -93,8 +125,77 @@ body{
     padding: 50px 0;
 }
 .htj .content{
-    transform: translate(10%,0);
+    /* transform: translate(10%,0); */
+    padding: 0 0 0 30px;
 }
 .htj .content .desc{
     padding: 10px 0 20px 10px;
+}
+
+/*--Mobile View--*/
+@media (max-width:1200px){
+    .wju , .aye{
+        padding: 100px 100px 50px 100px;
+    }
+    .wju .cont , .aye .cont{
+        width: 90%;
+        float: none;
+        margin: 0 0 0 20px;
+    }
+    .wju .heading , .aye .heading{
+        text-align: center;
+    }
+    .wju img, .aye img{
+        width: 100%;
+        float: none;
+        padding: 50px 150px;
+    }
+    .banner .heading{
+        font-size: 30px;
+    }
+}
+@media (max-width:991px){
+    .wju img, .aye img{
+        padding: 50px 50px;
+    }
+    .wju, .aye{
+        padding: 50px 80px 50px 80px;
+    }
+    .banner .heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:620px){
+    .main .heading {
+        font-size: 30px;
+    }
+    .wju, .aye{
+        padding: 50px 50px 10px 50px;
+    }
+    .wju img, .aye img{
+        padding: 50px 30px;
+    }
+    .banner .heading{
+        font-size: 15px;
+    }
+    .htj .heading{
+        font-size: 50px;
+    }
+}
+@media (max-width:426px){
+    .main .heading {
+        font-size: 25px;
+    }
+    .wju, .aye{
+        padding: 50px 20px 10px 20px;
+    }
+    .wju img, .aye img{
+        padding: 50px 10px;
+    }
+    .htj .heading{
+        font-size: 40px;
+    }
+    .htj{
+        padding: 10px 0 100px 0;
+    }
 }

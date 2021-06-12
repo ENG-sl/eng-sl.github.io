@@ -20,6 +20,11 @@ p,h1,h2,h3,li{
     color: #668fff;
     background: transparent;
 }
+.highlight{
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
 .divider{
 	padding: 5px 0 5px 5%;
 }
@@ -53,7 +58,7 @@ span a:hover{
     );
 } */
 .navbar-nav.navbar-center {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translatex(-50%);
 }
@@ -218,3 +223,6 @@ span a:hover{
 .footer-dark .copyright span{
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
 }
+
+
+/*--Mobile View--*/

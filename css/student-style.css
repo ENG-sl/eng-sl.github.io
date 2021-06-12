@@ -6,7 +6,7 @@ body{
         #fff
     );
 }
-.main {
+.main{
     position: relative; 
     width: 100%;
     display: flex;
@@ -18,7 +18,7 @@ body{
 .main::before {    
     content: "";
     background-attachment: fixed;
-    background-image: url('/img/bg4.jpg');
+    background-image: url('/img/englishBg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -26,10 +26,10 @@ body{
     width: 80%;
     height: 40%;
     opacity: 0.5;
-    filter: blur(5px);
+    filter: blur(8px);
 }
 
-.main .heading {
+.main .heading{
     position: relative;  
     font-size: 50px;
     font-family: 'rock salt';
@@ -53,7 +53,7 @@ body{
 
 /*--Student Information--*/
 .si{
-    padding: 50px 100px;
+    padding: 50px 100px 200px;
     display: inline-block;
     width: 100%;
 }
@@ -74,15 +74,44 @@ body{
     float: right;
 }
 .eligible video{
+    width: 100%;
     text-align: center;
-    padding: 50px 5% ;
+    padding: 50px 20px;
+}
+.benifits .content ol, .eligible .content ol{
+    padding: 0 0 0 20px;
+}
+
+.banner {
+    width: 100%;
+    padding: 0 10%;
+}
+.banner a{
+    display: block;
+}
+.banner .heading{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 1000;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.banner a:hover{
+    text-decoration: none;
+}
+.banner .heading:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 70px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
 }
 
 /*--How To Join Us--*/
 .htj{
-    width: 80%;
-    transform: translate(10%,0);
-    padding: 50px 0 200px 0;
+    width: 100%;
+    padding: 100px 0 200px 0;
 }
 .htj .heading{
     font-size: 60px;
@@ -92,8 +121,87 @@ body{
     padding: 50px 0;
 }
 .htj .content{
-    transform: translate(10%,0);
+    transform: translate(20%,0);
+    width: 80%;
 }
 .htj .content .desc{
     padding: 10px 0 20px 10px;
+}
+
+/*--Mobile View--*/
+@media (max-width:1200px){
+    .banner .heading{
+        font-size: 30px;
+    }
+    .benifits , .eligible{
+        width: 100%;
+        float: none;
+        padding: 50px 100px;
+    }
+    .benifits .heading, .eligible .heading{
+        font-size: 40px;
+    }
+    .eligible video{
+        width: 100%;
+        text-align: center;
+        padding: 50px 80px;
+    }
+    .si{
+        padding: 50px 100px 100px;
+    }
+}
+@media (max-width:991px){
+    .wju{
+        padding: 50px 100px 50px;
+    }
+    .si{
+        padding: 50px 50px 50px;
+        display: inline-block;
+        width: 100%;
+    }
+    .eligible video{
+        width: 100%;
+        text-align: center;
+        padding: 50px 50px;
+    }
+    .benifits , .eligible{
+        padding: 50px 50px;
+    }
+    .banner .heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:620px){
+    .main .heading {
+        font-size: 30px;
+    }
+    .banner .heading{
+        font-size: 15px;
+    }
+    .eligible video{
+        padding: 50px 10px;
+    }
+    .benifits , .eligible{
+        padding: 50px 30px;
+    }
+}
+@media (max-width:426px){
+    .wju{
+        padding: 30px 10px;
+    }
+    .main .heading {
+        font-size: 25px;
+    }
+    .eligible video{
+        padding: 50px 0;
+    }
+    .benifits , .eligible{
+        padding: 20px 10px;
+    }
+    .si{
+        padding: 20px 20px 50px;
+    }
+    .htj .heading{
+        font-size: 40px;
+    }
 }

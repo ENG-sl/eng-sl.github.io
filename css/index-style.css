@@ -1,4 +1,22 @@
+body{
+    background: linear-gradient(
+        180deg,
+        #C8A2C8,
+        #fff
+    );
+}
 /*--Slider--*/
+.carousel .carousel-item {
+    height: 670px;
+}
+  
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 670px;
+}
 .carousel-caption{
     top: 50%;
     transform: translateY(-50%);
@@ -29,11 +47,11 @@
 /*--Work--*/
 .workContainer{
     padding: 10px;
-    background: linear-gradient(
+    /* background: linear-gradient(
         180deg,
         #C8A2C8,
         #fff
-    );
+    ); */
 }
 .whatWeDo , .howWeDo{
     display: inline-block;
@@ -96,7 +114,7 @@
 .join .jButton:hover{
     color: #282d32;
     transform: scale(1.05);
-    box-shadow: 0px 0px 70px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 70px #3F7EC0 /*rgba(0,0,0,0.5*/;
     transition: all 0.3s ease;
 }
 
@@ -109,5 +127,78 @@
     font-family: itim;
 }
 .fmi .content{
-    padding: 0 0 0 20px;
+    padding: 0 20px;
 }
+
+
+/*--Mobile View--*/
+@media (max-width:1200px){
+    .workContainer{
+        display: block;
+        padding: 0 0 0 10%;
+    }
+    .whatWeDo , .howWeDo{
+        display: block;
+    }
+    .whatWeDo .content, .howWeDo .content{
+        width: 90%;
+    }
+    .whatWeDo video, .howWeDo video{
+        width: 70%;
+        text-align: center;
+        margin: 0 10%;
+    }
+    .whatWeDo .content, .whatWeDo video, .howWeDo .content, .howWeDo video{
+        float: none;
+    }
+}
+@media (max-width:991px){
+    .carousel .carousel-item {
+        height: 600px;
+    }
+    .carousel-item img {
+        min-height: 600px;
+    } 
+    .whatWeDo video, .howWeDo video{
+        width: 90%;
+        margin: 0 0;
+    }
+    .whatWeDo .content ul, .howWeDo .content ul{
+        margin: 0 0 0 20px;
+    }
+}
+@media (max-width:620px){
+    .carousel .carousel-item {
+        height: 300px;
+    }
+    .carousel-item img {
+        min-height: 300px;
+    }
+    .whatWeDo , .howWeDo{
+        padding: 50px 10px;
+    }
+    .whatWeDo video, .howWeDo video{
+        width: 90%;
+        margin: 0 0;
+    }
+    .join .content{
+        padding: 10px 30px;
+    }
+}
+@media (max-width:420px){
+    .workContainer{
+        padding: 0 0 0 10px;
+    }
+    .whatWeDo .heading,.howWeDo .heading{
+        font-size: 35px;
+    }
+    .whatWeDo video, .howWeDo video{
+        width: 100%;
+        margin: 0 0;
+        padding: 50px 0;
+    }
+    .fmi .heading{
+        font-size: 25px;
+    }
+}
+

@@ -97,3 +97,24 @@ body{
     width: 200px;
     transform: translate(25%,0);
 }
+
+
+/*--Mobile View--*/
+@media (max-width:620px){
+    .main .heading{
+        font-size: 35px;
+    }
+}
+@media (max-width:420px){
+    .main .heading{
+        font-size: 30px;
+    }
+    .box{
+        width: 250px;
+    }
+    .memberDesc{
+        padding: 0 0 50px 0;
+        width: 180px;
+        transform: translate(20%,0);
+    }
+}
