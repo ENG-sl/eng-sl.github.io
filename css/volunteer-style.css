@@ -65,7 +65,7 @@ body{
 /*--Are You Eligible--*/
 .aye{
     display: inline-block;
-    padding: 100px 100px 50px 100px;
+    padding: 100px 100px 100px 100px;
     width: 100%;
 }
 .aye .cont{
@@ -82,7 +82,7 @@ body{
     padding: 10px 50px 50px 0;
 }
 .aye .content ol{
-    padding: 10px 0 0px 30px;
+    padding: 10px 0 0px 40px;
 }
 
 .banner {
@@ -115,7 +115,7 @@ body{
 .htj{
     width: 80%;
     transform: translate(10%,0);
-    padding: 50px 0 200px 0;
+    padding: 100px 0 200px 0;
 }
 .htj .heading{
     font-size: 60px;

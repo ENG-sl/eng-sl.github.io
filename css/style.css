@@ -52,15 +52,15 @@ span a:hover{
 }
 /* .navbar{
     background: linear-gradient(
-        180deg,
-        #8032ee,
-        #ffffff
+        135deg,
+		#6C9EDF,
+		#ffffff
     );
 } */
 .navbar-nav.navbar-center {
     position: relative;
-    left: 50%;
-    transform: translatex(-50%);
+    left: 45%;
+    transform: translatex(-45%);
 }
 .navbar-brand {
 	display: block;
@@ -208,6 +208,11 @@ span a:hover{
 }
 .footer-dark .item.social>.discord:hover{
 	color: #7289da;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+.footer-dark .item.social>.facebook:hover{
+	color: #4968ac;
 	transition: all 0.3s ease;
 	transform: scale(1.2);
 }
