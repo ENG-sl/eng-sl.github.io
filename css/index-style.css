@@ -1,9 +1,10 @@
 body{
-    background: linear-gradient(
+    background-color: #7697a1;
+    /* background: linear-gradient(
         180deg,
-        #B5A2C8,
+        #35697B,( #B5A2C8 )
         #fff
-    );
+    ); */
 }
 /*--Slider--*/
 .carousel .carousel-item {
@@ -44,6 +45,62 @@ body{
     padding: 13px 9px;
 } */
 
+
+/*--Mission & Vision Container--*/
+/* .mvContainer{
+    display: inline-block;
+    padding: 100px 100px 100px;
+}
+.mvContainer .mission{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.mvContainer .vision{
+    text-align: center;
+    float: right;
+    width: 50%;
+    padding: 0 0 0 50px;
+}
+.mvContainer .mission .heading , .mvContainer .vision .heading{
+    font-family: itim;
+    font-size: 30px;
+}
+.mvContainer .description{
+    font-family: comicNeue;
+    font-weight: 100;
+} */
+.mv{
+    display: block;
+}
+.mvContainer{
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+.mission{
+    float: left;
+    text-align: center;
+    width: 45%;
+    padding: 50px 10px 50px 100px;
+}
+.mission .heading{
+    font-family: itim;
+    font-size: 30px;
+}
+.vision{
+    float: right;
+    text-align: center;
+    width: 45%;
+    padding: 50px 100px 50px 10px;
+}
+.vision .heading{
+    font-family: itim;
+    font-size: 30px;
+}
+
+
+
 /*--Work--*/
 .workContainer{
     padding: 10px;
@@ -55,7 +112,7 @@ body{
 }
 .whatWeDo , .howWeDo{
     display: inline-block;
-    padding: 50px 80px;
+    padding: 100px 80px 50px 80px;
 }
 .whatWeDo .heading,.howWeDo .heading{
     text-align: center;
@@ -67,18 +124,20 @@ body{
     float: left;
     width: 50%;
 }
-.whatWeDo video{
+.whatWeDo img{
     float: right;
     padding: 80px 10px 50px;
+    width: 40%;
 }
 
 .howWeDo .content{
     float: right;
     width: 50%;
 }
-.howWeDo video{
+.howWeDo img{
     float: left;
     padding: 80px 10px 50px;
+    width: 40%;
 }
 
 /*--Join Us--*/
@@ -106,25 +165,26 @@ body{
 .join .jButton{
     padding: 15px 40px;
     border-radius: 100px;
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: solid;
-    border-color: #a4a4a5;
+    border-color: #a4a4a5; */
     transition: all 0.3s ease;
+    background-color: #6D4FB0;
 }
 .join .jButton:hover{
-    color: #282d32;
+    /* color: #282d32; */
     transform: scale(1.05);
-    /* box-shadow: 0px 0px 70px #3F7EC0; */
+    box-shadow: 0px 0px 70px #9dcafa;
     transition: all 0.3s ease;
 }
-.join .VButton:hover{
-    box-shadow: 0px 0px 70px #9062be;
+/* .join .VButton:hover{
+    box-shadow: 0px 0px 50px #1a53ce6b;
     transition: all 0.3s ease;
 }
 .join .SButton:hover{
-    box-shadow: 0px 0px 70px #6C9EDF /*rgba(0,0,0,0.5*/;
+    box-shadow: 0px 0px 50px #5100ff85;
     transition: all 0.3s ease;
-}
+} */
 
 /*For More Info(fmi)*/
 .fmi{
@@ -146,17 +206,18 @@ body{
         padding: 0 0 0 10%;
     }
     .whatWeDo , .howWeDo{
+        padding: 50px 80px;
         display: block;
     }
     .whatWeDo .content, .howWeDo .content{
         width: 90%;
     }
-    .whatWeDo video, .howWeDo video{
+    .whatWeDo img, .howWeDo img{
         width: 70%;
         text-align: center;
         margin: 0 10%;
     }
-    .whatWeDo .content, .whatWeDo video, .howWeDo .content, .howWeDo video{
+    .whatWeDo .content, .whatWeDo img, .howWeDo .content, .howWeDo img{
         float: none;
     }
 }
@@ -167,7 +228,22 @@ body{
     .carousel-item img {
         min-height: 600px;
     } 
-    .whatWeDo video, .howWeDo video{
+    .mvContainer{
+        text-align: center;
+        width: 100%;
+    }
+    .mission{
+        float: center;
+        width: 90%;
+        padding: 50px 0 0 10%;
+    }
+    .vision{
+        display: block;
+        float: none;
+        width: 90%;
+        padding: 50px 0 0 10%;
+    }
+    .whatWeDo img, .howWeDo img{
         width: 90%;
         margin: 0 0;
     }
@@ -185,7 +261,7 @@ body{
     .whatWeDo , .howWeDo{
         padding: 50px 10px;
     }
-    .whatWeDo video, .howWeDo video{
+    .whatWeDo img, .howWeDo img{
         width: 90%;
         margin: 0 0;
     }
@@ -194,13 +270,16 @@ body{
     }
 }
 @media (max-width:420px){
+    .mvContainer .description span{
+        display: none;
+    }
     .workContainer{
         padding: 0 0 0 10px;
     }
     .whatWeDo .heading,.howWeDo .heading{
         font-size: 35px;
     }
-    .whatWeDo video, .howWeDo video{
+    .whatWeDo img, .howWeDo img{
         width: 100%;
         margin: 0 0;
         padding: 50px 0;
@@ -208,5 +287,6 @@ body{
     .fmi .heading{
         font-size: 25px;
     }
+
 }
 

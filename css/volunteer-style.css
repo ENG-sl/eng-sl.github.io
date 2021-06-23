@@ -1,10 +1,11 @@
 /*--Main Heading--*/
 body{
-    background: linear-gradient(
+    background-color: #C8A2C8;
+    /* background: linear-gradient(
         180deg,
         #C8A2C8,
         #fff
-    );
+    ); */
 }
 .main {
     position: relative; 
@@ -12,6 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0;
 }
 
 .main::before {    
@@ -33,7 +35,7 @@ body{
     font-size: 50px;
     font-family: 'rock salt';
     font-weight: 1000;
-    padding: 100px 0 100px 0;
+    /* padding: 100px 0 100px 0; */
     z-index: 10;
     margin: 0;
     text-align: center;

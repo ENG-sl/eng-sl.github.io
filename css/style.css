@@ -34,12 +34,12 @@ p,h1,h2,h3,li{
 }
 span a{
 	text-decoration: none;
-	color: #668fff;
+	color: #5814d8;
 	transition: all 0.3s ease;
 }
 span a:hover{
 	text-decoration: underline;
-	color: #668fff;
+	color: #6625e0;
 	transition: all 0.3s ease;
 }
 
@@ -97,7 +97,7 @@ span a:hover{
 	border: none!important;
 }
 .nav-link {
-	color: #000!important;
+	color: #fff!important;
 	font-weight: 350;
 	font-size: 16px;
     transition: all 0.5s ease;
@@ -108,13 +108,17 @@ span a:hover{
 .nav-item:hover {
 	transition: all 0.5s ease;
 }
-.nav-link:hover {
+/* .nav-link:hover {
     transition: all 0.5s ease;
-    color: #fff!important;
-}
-.donate , .donate:hover{
+    color: #2e3131!important;
+} */
+.donate{
     background-color: #746cdf!important;
     color: #fff!important;
+}
+.donate:hover{
+	transition: all 0.5s ease;
+    color: #2e3131!important;
 }
 .active-link{
     border-width: 2px;
@@ -123,7 +127,7 @@ span a:hover{
 }
 .active-link:hover{
 	background: none!important;
-	color: #000!important;
+	color: #fff!important;
 }
 
 /*--FOOTER--*/
@@ -231,3 +235,23 @@ span a:hover{
 
 
 /*--Mobile View--*/
+/* @media (max-width:991px){
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+} */
+@media (max-width:420px){
+    p,h1,h2,h3,li{
+		font-family: 'Open Sans Condensed';
+		font-weight: 600;
+		font-size: 19px;
+	}
+	.heading{
+		font-size: 20px;
+	}
+}

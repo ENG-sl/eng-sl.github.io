@@ -1,10 +1,11 @@
 /*--Main Heading--*/
 body{
-    background: linear-gradient(
+    background-color: #A2C8C8;
+    /* background: linear-gradient(
         180deg,
         #A2C8C8,
         #fff
-    );
+    ); */
 }
 .main {
     position: relative; 
@@ -43,6 +44,7 @@ body{
     text-align: center;
     padding: 50px 100px;
 }
+
 /*--Members--*/
 .ourTeam{
     width: 100%;
@@ -76,7 +78,7 @@ body{
 }
 .box{
     width: 300px;
-    background-color: white;
+    background-color: #fff;/*#80a3a3*//*#202225*/
 }
 .memberName{
     font-size: 25px;
@@ -93,9 +95,10 @@ body{
     padding: 30px 0 10px 0;
 }
 .memberDesc{
+    font-size: 19px;
     padding: 0 0 50px 0;
-    width: 200px;
-    transform: translate(25%,0);
+    width: 230px;
+    transform: translate(15%,0);
 }
 
 
