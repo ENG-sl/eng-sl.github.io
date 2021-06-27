@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.eng-sl.github.io.com/sitemap.xml
+Sitemap: http://eng-sl.github.io.com/sitemap.xml
