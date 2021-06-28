@@ -19,7 +19,7 @@ body{
 .main::before {    
     content: "";
     background-attachment: fixed;
-    background-image: url('/img/bg4.webp');
+    background-image: url('/img/bg4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

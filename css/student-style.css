@@ -20,7 +20,7 @@ body{
 .main::before {    
     content: "";
     background-attachment: fixed;
-    background-image: url('/img/englishBg.webp');
+    background-image: url('/img/englishBg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
