@@ -174,7 +174,7 @@ body{
 .join .jButton:hover{
     /* color: #282d32; */
     transform: scale(1.05);
-    box-shadow: 0px 0px 70px #9dcafa;
+    box-shadow: 5px 5px 10px #00000080;
     transition: all 0.3s ease;
 }
 /* .join .VButton:hover{
