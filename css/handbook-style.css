@@ -1,0 +1,124 @@
+/*--Main Heading--*/
+body{
+    background-color: #A2C8C8;
+    /* background: linear-gradient(
+        180deg,
+        #A2C8C8,
+        #fff
+    ); */
+}
+.main {
+    position: relative; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main::before {    
+    content: "";
+    background-attachment: fixed;
+    background-image: url('/img/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.main .heading {
+    position: relative;  
+    font-size: 50px;
+    font-family: 'rock salt';
+    font-weight: 1000;
+    padding: 100px 0 100px 0;
+    z-index: 10;
+    margin: 0;
+    text-align: center;
+}
+
+.desc{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+/*--single-items--*/
+.ourTeam{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+.ourTeam p{
+    font-size: 40px;
+    font-family: itim;
+}
+.content{
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px 200px 30px;
+}
+.single-item{
+    display: inline-flex;
+    margin: 10px 5px 10px 5px;
+    transition: all 0.3s ease;
+    outline-width: 0.1px;
+    outline-color: #a4a4a5;
+    outline-style: solid;
+}
+.single-item:hover{
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.content a{
+    text-decoration: none;
+    text-emphasis: none;
+    color: #212529;
+}
+.box{
+    width: 250px;
+    background-color: #fff;/*#80a3a3*//*#202225*/
+}
+.single-item .name{
+    font-size: 20px;
+    font-family: rock salt;
+    padding: 50px 0 10px 0;
+}
+.single-item .img{
+    height: 150px!important;
+    padding: 10px;
+    border-radius: 30px;
+}
+.single-item .desc{
+    font-size: 17px;
+    padding: 10px 0 30px 0;
+    width: 190px;
+    transform: translate(15%,0);
+}
+
+
+/*--Mobile View--*/
+@media (max-width:620px){
+    .main .heading{
+        font-size: 35px;
+    }
+}
+@media (max-width:420px){
+    .main .heading{
+        font-size: 30px;
+    }
+    .box{
+        width: 250px;
+    }
+    .single-itemDesc{
+        padding: 0 0 50px 0;
+        width: 180px;
+        transform: translate(20%,0);
+    }
+}
