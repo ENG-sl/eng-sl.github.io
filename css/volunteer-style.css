@@ -88,15 +88,17 @@ body{
 }
 
 .banner {
-    width: 100%;
-    padding: 0 10%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 10%; */
 }
 .banner a{
     display: block;
 }
 .banner .heading{
     padding: 30px;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 1000;
     border-width: 3px;
     border-style: solid;
@@ -124,19 +126,17 @@ body{
 .button{
     padding: 15px 40px;
     border-radius: 100px;
-    width: 300px;
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: #a4a4a5; */
+    width: 250px;
     transition: all 0.3s ease;
     background-color: #6D4FB0;
-    margin: 50px 40%;
+    margin: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button div{
     text-align: center;
 }
 .button:hover{
-    /* color: #282d32; */
     transform: scale(1.05);
     box-shadow: 5px 5px 10px #00000080;
     transition: all 0.3s ease;
@@ -184,9 +184,6 @@ body{
     .banner .heading{
         font-size: 30px;
     }
-    .button{
-        margin: 50px 35%;
-    }
 }
 @media (max-width:991px){
     .wju img, .aye img{
@@ -197,9 +194,6 @@ body{
     }
     .banner .heading{
         font-size: 20px;
-    }
-    .button{
-        margin: 50px 30%;
     }
 }
 @media (max-width:620px){
@@ -214,12 +208,10 @@ body{
     }
     .banner .heading{
         font-size: 15px;
+        border-radius: 20px!important;
     }
     .htj .heading{
         font-size: 50px;
-    }
-    .button{
-        margin: 50px 25%;
     }
 }
 @media (max-width:426px){

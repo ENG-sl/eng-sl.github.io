@@ -43,6 +43,7 @@ body{
 .description{
     text-align: center;
     width: 70%;
+    padding: 20px 0;
     transform: translate(20%);
 }
 
@@ -99,7 +100,7 @@ body{
 .single-item .img{
     height: 150px!important;
     padding: 10px;
-    margin: 20px 0 30px;
+    margin: 20px 0 50px;
     border-radius: 30px;
 }
 .single-item .desc{

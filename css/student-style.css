@@ -117,15 +117,17 @@ body{
 }
 
 .banner {
-    width: 100%;
-    padding: 0 10%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 10%; */
 }
 .banner a{
     display: block;
 }
 .banner .heading{
     padding: 30px;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 1000;
     border-width: 3px;
     border-style: solid;
@@ -229,6 +231,7 @@ body{
     }
     .banner .heading{
         font-size: 15px;
+        border-radius: 20px!important;
     }
     .eligible video{
         padding: 50px 10px;
