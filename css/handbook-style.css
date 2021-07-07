@@ -40,6 +40,12 @@ body{
     text-align: center;
 }
 
+.description{
+    text-align: center;
+    width: 70%;
+    transform: translate(20%);
+}
+
 .desc{
     text-align: center;
     padding: 50px 100px;
@@ -93,6 +99,7 @@ body{
 .single-item .img{
     height: 150px!important;
     padding: 10px;
+    margin: 20px 0 30px;
     border-radius: 30px;
 }
 .single-item .desc{
@@ -104,14 +111,19 @@ body{
 
 
 /*--Mobile View--*/
-@media (max-width:620px){
-    .main .heading{
-        font-size: 35px;
+@media (max-width:720px){
+    .main .heading {
+        font-size: 30px;
+    }
+}
+@media (max-width:426px){
+    .main .heading {
+        font-size: 25px;
     }
 }
 @media (max-width:420px){
     .main .heading{
-        font-size: 30px;
+        font-size: 20px;
     }
     .box{
         width: 250px;
