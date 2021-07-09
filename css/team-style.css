@@ -61,7 +61,7 @@ body{
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 30px 200px 30px;
+    padding: 50px 30px 50px 30px;
 }
 .member{
     display: inline-flex;
@@ -110,7 +110,7 @@ body{
 .contact .description{
     text-align: center;
     width: 70%;
-    padding: 30px 0 50px;
+    padding: 10px 0 50px;
     margin-left: auto;
     margin-right: auto;
 }

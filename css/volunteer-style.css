@@ -14,19 +14,31 @@ body{
     align-items: center;
     justify-content: center;
     padding: 100px 0;
+    /* margin: 50px 0; */
+    /* border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .main::before {    
     content: "";
     background-attachment: fixed;
-    background-image: url('/img/bg4.jpg');
+    background-image: url('/img/bg6.png');
+    /* background: linear-gradient(
+        90deg,
+        #C8A2C8,
+        #fff
+    ); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     position: absolute;
     width: 80%;
     height: 55%;
-    opacity: 0.5;
+    border-radius: 20px;
+    opacity: 0.8;
     filter: blur(5px);
 }
 
@@ -115,13 +127,32 @@ body{
     transition: all 0.3s ease;
 }
 
-/*--Button--*/
+/*--Handbook--*/
+.handbook{
+    background-image: url(/img/bg8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 70%;
+    margin: 50px 0;
+    padding: 50px 10px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.handbook .heading {
+    font-family: open sans condensed;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
 
 .button a{
     text-decoration: none!important;
     font-family: 'Open Sans Condensed';
     font-size: 25px;
-    color: #000;
+    color: #fff;
 }
 .button{
     padding: 15px 40px;
@@ -229,5 +260,11 @@ body{
     }
     .htj{
         padding: 10px 0 100px 0;
+    }
+    .button{
+        width: 200px;
+    }
+    .handbook{
+        width: 90%;
     }
 }

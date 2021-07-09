@@ -99,7 +99,36 @@ body{
     font-size: 30px;
 }
 
+/*--Who We Are--*/
+.whoWeAre{
+    width: 80%;
+    margin: 50px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whoWeAre .heading{
+    font-family: itim;
+    font-size: 50px;
+    text-align: center;
+}
+.whoWeAre .content p{
+    margin: 10px 0 0;
+    text-align: center;
+}
 
+/*--Slogan--*/
+.slogan {
+    width: 70%;
+    padding: 0 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slogan .heading{
+    text-align: center;
+    font-family: caveatbrush;
+    font-size: 35px;
+    font-weight: 100;
+}
 
 /*--Work--*/
 .workContainer{
@@ -110,6 +139,7 @@ body{
         #fff
     ); */
 }
+
 .whatWeDo , .howWeDo{
     display: inline-block;
     padding: 100px 80px 50px 80px;
@@ -276,7 +306,7 @@ body{
     .workContainer{
         padding: 0 0 0 10px;
     }
-    .whatWeDo .heading,.howWeDo .heading{
+    .whatWeDo .heading,.howWeDo .heading,.whoWeAre .heading{
         font-size: 35px;
     }
     .whatWeDo img, .howWeDo img{

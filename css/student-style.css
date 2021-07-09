@@ -20,14 +20,20 @@ body{
 .main::before {    
     content: "";
     background-attachment: fixed;
-    background-image: url('/img/englishBg.jpg');
+    background-image: url('/img/bg7.png');
+    /* background: linear-gradient(
+        90deg,
+        #C8A2C8,
+        #fff
+    ); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     position: absolute;
     width: 80%;
     height: 55%;
-    opacity: 0.5;
+    border-radius: 20px;
+    opacity: 0.8;
     filter: blur(5px);
 }
 
