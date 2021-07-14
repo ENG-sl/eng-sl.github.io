@@ -43,6 +43,20 @@ span a:hover{
 	transition: all 0.3s ease;
 }
 
+body::-webkit-scrollbar {
+  	width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  	background:  #626669;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #2e3131 ;
+	border-radius: 6px;
+	border: 3px solid #626669;
+}
+
 /*--NAVBAR--*/
 #nav-bar {
 	position: sticky;
