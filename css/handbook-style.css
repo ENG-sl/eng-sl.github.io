@@ -1,6 +1,6 @@
 /*--Main Heading--*/
 body{
-    background-color: #A2C8C8;
+    background-color: #b791d6;
     /* background: linear-gradient(
         180deg,
         #A2C8C8,
@@ -108,6 +108,12 @@ body{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.3s ease;
+}
+.first-session:hover{
+    box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 .first-session .contBox{
     background-color: #fff;
