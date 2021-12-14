@@ -1,0 +1,123 @@
+/*--FONTS--*/
+@font-face { font-family: Rock Salt; src: url(/fonts/RockSalt-Regular.ttf);font-display: swap;}
+@font-face { font-family: Itim; src: url(/fonts/Itim-Regular.ttf);font-display: swap;}
+@font-face { font-family: CaveatBrush; src: url(/fonts/CaveatBrush-Regular.ttf);font-display: swap;}
+@font-face { font-family: ComicNeue; src: url(/fonts/ComicNeue-Bold.ttf);font-display: swap;}
+@font-face { font-family: Gidolinya; src: url(/fonts/Gidolinya-Regular.otf);font-display: swap;}
+
+/*-- Global --*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111317;
+}
+
+
+/*-- Page Content --*/
+.logo-container{
+    height: 20vh;
+    width: 100vw;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: Rock Salt;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 50px;
+}
+.page-content{
+    background: #111317;
+    color: #fff;
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.page-content .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.page-content .container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+.page-content .heading{
+    font-family: Gidolinya;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.page-content p{
+    font-family: Gidolinya;
+    font-size: 20px;
+    color: #c9c9c9a9;
+}
+.page-content span{
+    color: #fff;
+    white-space: nowrap;
+}
+.page-content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials .item-cont{
+    text-align: center;
+    margin: 20px 50px;
+}
+.socials .item-cont a{
+    font-size: 20px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 15px 10px;
+	color: var(--font-primary);
+	opacity: 0.75;
+	transition: all 0.3s ease;
+}
+
+.socials .item-cont .instagram:hover{
+	color: #E1306C;
+	transition: all 0.3s ease;
+	transform: scale(1.5);
+}
+.socials .item-cont .twitter:hover{
+	color: #1DA1F2;
+	transition: all 0.3s ease;
+	transform: scale(1.5);
+}
+.socials .item-cont .mail:hover{
+	color: #EA4335;
+	transition: all 0.3s ease;
+	transform: scale(1.5);
+}
+.socials .item-cont .discord:hover{
+	color: #7289da;
+	transition: all 0.3s ease;
+	transform: scale(1.5);
+}
+.socials .item-cont .facebook:hover{
+	color: #4968ac;
+	transition: all 0.3s ease;
+	transform: scale(1.5);
+}
